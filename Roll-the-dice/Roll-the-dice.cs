@@ -12,6 +12,9 @@ namespace Roll_the_dice
 {
     public partial class Form1 : Form
     {
+
+        //Shift significa Turno.
+
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +23,7 @@ namespace Roll_the_dice
         }
 
         int scorePlayer1, scorePlayer2, playPlayer1, playPlayer2, nr, clicks;
-        bool turnPlayer1 = true, endGame;
+        bool shiftPlayer1 = true, endGame;
         Image[] imagesDice = new Image[7];
         Random rdn = new Random();
         
@@ -35,16 +38,16 @@ namespace Roll_the_dice
             imagesDice[6] = Properties.Resources.Alea_6;
         }
 
-        private void changeTurn()
+        private void changeShift()
         {
             // "!" faz a variável turnPlayer1 ter o valor inverso
-            turnPlayer1 = !turnPlayer1;
+            shiftPlayer1 = !shiftPlayer1;
         }
 
         private void updateButton()
         {
-            btnPlay1.Enabled = turnPlayer1 && !endGame;
-            btnPlay2.Enabled = !turnPlayer1 && !endGame;
+            btnPlay1.Enabled = shiftPlayer1 && !endGame;
+            btnPlay2.Enabled = !shiftPlayer1 && !endGame;
         }
 
         private void colorButton()
@@ -55,7 +58,7 @@ namespace Roll_the_dice
 
         private void changeImage()
         {
-            if (turnPlayer1)
+            if (shiftPlayer1)
             {
                 pbDice_1.Image = imagesDice[nr];
             }
@@ -88,7 +91,42 @@ namespace Roll_the_dice
             {
                 playPlayer2++;
             }
+
+            showScore();
         }
 
+        private void showScore()
+        {
+            lblPlayer1.Text = "Score:  " + scorePlayer1.ToString();
+            lblPlayer2.Text = "Score:  " + scorePlayer2.ToString();
+
+        }
+
+        private void endShift()
+        {
+            if (shiftPlayer1)
+            {
+                playPlayer1 = nr;
+            }
+            else
+            {
+                playPlayer2 = nr;
+            }
+
+            if(clicks == 2)
+            {
+                showWinner();
+            }
+            else
+            {
+                changeShift();
+            }
+        }
+
+        private void Clicks(object sender, EventArgs e)
+        {
+            clicks++;
+            drawValor();
+        }
     }
 }

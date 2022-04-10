@@ -62,7 +62,6 @@ namespace Roll_the_dice
             this.pbDice_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDice_2.TabIndex = 1;
             this.pbDice_2.TabStop = false;
-            this.pbDice_2.Click += new System.EventHandler(this.pbDice_2_Click);
             // 
             // lblScoreP1
             // 

@@ -15,6 +15,8 @@ namespace Roll_the_dice
         public Form1()
         {
             InitializeComponent();
+            startImages();
+            updateButton();
         }
 
         int scorePlayer1, scorePlayer2, playPlayer1, playPlayer2, nr, clicks;
@@ -35,11 +37,14 @@ namespace Roll_the_dice
 
         private void changeTurn()
         {
+            // "!" faz a variável turnPlayer1 ter o valor inverso
             turnPlayer1 = !turnPlayer1;
         }
 
         private void updateButton()
         {
+            btnPlay1.Enabled = turnPlayer1 && !endGame;
+            btnPlay2.Enabled = !turnPlayer1 && !endGame;
 
         }
     }

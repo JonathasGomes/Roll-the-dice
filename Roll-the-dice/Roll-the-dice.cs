@@ -48,6 +48,9 @@ namespace Roll_the_dice
         {
             btnPlay1.Enabled = shiftPlayer1 && !endGame;
             btnPlay2.Enabled = !shiftPlayer1 && !endGame;
+            btnReset.Enabled = endGame;
+
+            colorButton();
         }
 
         private void colorButton()
@@ -74,6 +77,7 @@ namespace Roll_the_dice
             nr = (int)Math.Truncate((rdn.NextDouble() * 10) % 6);
             nr++;
             changeImage();
+            endRound();
         }
 
         private void showWinner()
@@ -102,7 +106,7 @@ namespace Roll_the_dice
 
         }
 
-        private void endShift()
+        private void endRound()
         {
             if (shiftPlayer1)
             {
@@ -121,12 +125,24 @@ namespace Roll_the_dice
             {
                 changeShift();
             }
+
+            updateButton();
         }
 
         private void Clicks(object sender, EventArgs e)
         {
             clicks++;
             drawValor();
+        }
+
+        private void Reset(object sender, EventArgs e)
+        {
+            endGame = false;
+            playPlayer1 = playPlayer2 = clicks = 0;
+            lblWinner.Text = "Vencedor: ";
+            pbDice_1.Image = imagesDice[0];
+            pbDice_2.Image = imagesDice[0];
+            updateButton();
         }
     }
 }

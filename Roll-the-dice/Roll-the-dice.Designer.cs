@@ -141,6 +141,7 @@ namespace Roll_the_dice
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.Reset);
             // 
             // button1
             // 

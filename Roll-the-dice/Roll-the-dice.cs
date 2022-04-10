@@ -101,8 +101,8 @@ namespace Roll_the_dice
 
         private void showScore()
         {
-            lblPlayer1.Text = "Score:  " + scorePlayer1.ToString();
-            lblPlayer2.Text = "Score:  " + scorePlayer2.ToString();
+            lblScoreP1.Text = "Score:  " + scorePlayer1.ToString();
+            lblScoreP2.Text = "Score:  " + scorePlayer2.ToString();
 
         }
 

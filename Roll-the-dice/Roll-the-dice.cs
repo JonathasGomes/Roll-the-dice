@@ -45,7 +45,50 @@ namespace Roll_the_dice
         {
             btnPlay1.Enabled = turnPlayer1 && !endGame;
             btnPlay2.Enabled = !turnPlayer1 && !endGame;
-
         }
+
+        private void colorButton()
+        {
+            btnPlay1.BackColor = btnPlay1.Enabled ? Color.Red : Color.White;
+            btnPlay2.BackColor = btnPlay2.Enabled ? Color.Red : Color.White;
+        }
+
+        private void changeImage()
+        {
+            if (turnPlayer1)
+            {
+                pbDice_1.Image = imagesDice[nr];
+            }
+            else
+            {
+                pbDice_2.Image = imagesDice[nr];
+            }
+        }
+        //Esse método sorteia o número que vai cair no dado
+        private void drawValor()
+        {
+            //Esse código limita os números, o número maior que pode cair é 6, e o ++ faz que nunca caia no 0
+            nr = (int)Math.Truncate((rdn.NextDouble() * 10) % 6);
+            nr++;
+            changeImage();
+        }
+
+        private void showWinner()
+        {
+            endGame = true;
+
+            lblWinner.Text += " " + string.Format(playPlayer1 > playPlayer2 ? "Player 1" :
+                (playPlayer1 < playPlayer2 ? "Player 2" : "Empate!"));
+
+            if(playPlayer1 > playPlayer2)
+            {
+                scorePlayer1++;
+            }
+            else if (playPlayer1 < playPlayer2)
+            {
+                playPlayer2++;
+            }
+        }
+
     }
 }

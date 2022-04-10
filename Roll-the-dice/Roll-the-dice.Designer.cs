@@ -37,7 +37,7 @@ namespace Roll_the_dice
             this.lblPlayer2 = new System.Windows.Forms.Label();
             this.btnPlay1 = new System.Windows.Forms.Button();
             this.btnPlay2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblWinner = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
@@ -121,15 +121,15 @@ namespace Roll_the_dice
             this.btnPlay2.Text = "PLAY!";
             this.btnPlay2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblWinner
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(286, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 33);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Winner";
+            this.lblWinner.AutoSize = true;
+            this.lblWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWinner.Location = new System.Drawing.Point(286, 85);
+            this.lblWinner.Name = "lblWinner";
+            this.lblWinner.Size = new System.Drawing.Size(113, 33);
+            this.lblWinner.TabIndex = 8;
+            this.lblWinner.Text = "Winner";
             // 
             // btnReset
             // 
@@ -147,7 +147,7 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(681, 335);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.btnPlay2);
             this.Controls.Add(this.btnPlay1);
             this.Controls.Add(this.lblPlayer2);
@@ -177,7 +177,7 @@ namespace Roll_the_dice
         private System.Windows.Forms.Label lblPlayer2;
         private System.Windows.Forms.Button btnPlay1;
         private System.Windows.Forms.Button btnPlay2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.Button btnReset;
     }
 }

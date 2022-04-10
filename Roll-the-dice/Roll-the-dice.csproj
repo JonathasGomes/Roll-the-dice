@@ -101,5 +101,26 @@
   <ItemGroup>
     <None Include="Resources\120px-Dice-0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado_1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

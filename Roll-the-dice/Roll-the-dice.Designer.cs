@@ -29,6 +29,7 @@ namespace Roll_the_dice
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pbDice_1 = new System.Windows.Forms.PictureBox();
             this.pbDice_2 = new System.Windows.Forms.PictureBox();
             this.lblScoreP1 = new System.Windows.Forms.Label();
@@ -45,29 +46,32 @@ namespace Roll_the_dice
             // 
             // pbDice_1
             // 
-            this.pbDice_1.Image = global::Roll_the_dice.Properties.Resources._120px_Dice_0;
-            this.pbDice_1.Location = new System.Drawing.Point(64, 63);
+            this.pbDice_1.BackColor = System.Drawing.Color.Transparent;
+            this.pbDice_1.Image = global::Roll_the_dice.Properties.Resources.dado_0;
+            this.pbDice_1.Location = new System.Drawing.Point(65, 169);
             this.pbDice_1.Name = "pbDice_1";
-            this.pbDice_1.Size = new System.Drawing.Size(102, 98);
-            this.pbDice_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDice_1.Size = new System.Drawing.Size(44, 43);
+            this.pbDice_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDice_1.TabIndex = 0;
             this.pbDice_1.TabStop = false;
             // 
             // pbDice_2
             // 
-            this.pbDice_2.Image = global::Roll_the_dice.Properties.Resources._120px_Dice_0;
-            this.pbDice_2.Location = new System.Drawing.Point(493, 63);
+            this.pbDice_2.BackColor = System.Drawing.Color.Transparent;
+            this.pbDice_2.Image = global::Roll_the_dice.Properties.Resources.dado_0;
+            this.pbDice_2.Location = new System.Drawing.Point(406, 169);
             this.pbDice_2.Name = "pbDice_2";
-            this.pbDice_2.Size = new System.Drawing.Size(102, 98);
-            this.pbDice_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDice_2.Size = new System.Drawing.Size(44, 43);
+            this.pbDice_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDice_2.TabIndex = 1;
             this.pbDice_2.TabStop = false;
             // 
             // lblScoreP1
             // 
             this.lblScoreP1.AutoSize = true;
+            this.lblScoreP1.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScoreP1.Location = new System.Drawing.Point(69, 22);
+            this.lblScoreP1.Location = new System.Drawing.Point(43, 115);
             this.lblScoreP1.Name = "lblScoreP1";
             this.lblScoreP1.Size = new System.Drawing.Size(82, 29);
             this.lblScoreP1.TabIndex = 2;
@@ -76,8 +80,9 @@ namespace Roll_the_dice
             // lblScoreP2
             // 
             this.lblScoreP2.AutoSize = true;
+            this.lblScoreP2.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScoreP2.Location = new System.Drawing.Point(503, 22);
+            this.lblScoreP2.Location = new System.Drawing.Point(384, 115);
             this.lblScoreP2.Name = "lblScoreP2";
             this.lblScoreP2.Size = new System.Drawing.Size(82, 29);
             this.lblScoreP2.TabIndex = 3;
@@ -86,8 +91,9 @@ namespace Roll_the_dice
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1.Location = new System.Drawing.Point(70, 197);
+            this.lblPlayer1.Location = new System.Drawing.Point(60, 262);
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(65, 20);
             this.lblPlayer1.TabIndex = 4;
@@ -96,8 +102,9 @@ namespace Roll_the_dice
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2.Location = new System.Drawing.Point(504, 197);
+            this.lblPlayer2.Location = new System.Drawing.Point(385, 262);
             this.lblPlayer2.Name = "lblPlayer2";
             this.lblPlayer2.Size = new System.Drawing.Size(65, 20);
             this.lblPlayer2.TabIndex = 5;
@@ -105,7 +112,7 @@ namespace Roll_the_dice
             // 
             // btnPlay1
             // 
-            this.btnPlay1.Location = new System.Drawing.Point(62, 247);
+            this.btnPlay1.Location = new System.Drawing.Point(36, 312);
             this.btnPlay1.Name = "btnPlay1";
             this.btnPlay1.Size = new System.Drawing.Size(104, 41);
             this.btnPlay1.TabIndex = 6;
@@ -115,7 +122,7 @@ namespace Roll_the_dice
             // 
             // btnPlay2
             // 
-            this.btnPlay2.Location = new System.Drawing.Point(493, 247);
+            this.btnPlay2.Location = new System.Drawing.Point(374, 312);
             this.btnPlay2.Name = "btnPlay2";
             this.btnPlay2.Size = new System.Drawing.Size(102, 41);
             this.btnPlay2.TabIndex = 7;
@@ -126,8 +133,9 @@ namespace Roll_the_dice
             // lblWinner
             // 
             this.lblWinner.AutoSize = true;
+            this.lblWinner.BackColor = System.Drawing.Color.Transparent;
             this.lblWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWinner.Location = new System.Drawing.Point(286, 85);
+            this.lblWinner.Location = new System.Drawing.Point(123, 47);
             this.lblWinner.Name = "lblWinner";
             this.lblWinner.Size = new System.Drawing.Size(113, 33);
             this.lblWinner.TabIndex = 8;
@@ -135,7 +143,7 @@ namespace Roll_the_dice
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(275, 136);
+            this.btnReset.Location = new System.Drawing.Point(200, 192);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(124, 39);
             this.btnReset.TabIndex = 9;
@@ -148,7 +156,8 @@ namespace Roll_the_dice
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(681, 335);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(523, 450);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.btnPlay2);

@@ -29,13 +29,13 @@ namespace Roll_the_dice
         
         private void startImages()
         {
-            imagesDice[0] = Properties.Resources._120px_Dice_0;
-            imagesDice[1] = Properties.Resources.Alea_1;
-            imagesDice[2] = Properties.Resources.Alea_2;
-            imagesDice[3] = Properties.Resources.Alea_3;
-            imagesDice[4] = Properties.Resources.Alea_4;
-            imagesDice[5] = Properties.Resources.Alea_5;
-            imagesDice[6] = Properties.Resources.Alea_6;
+            imagesDice[0] = Properties.Resources.dado_0;
+            imagesDice[1] = Properties.Resources.dado_1;
+            imagesDice[2] = Properties.Resources.dado_2;
+            imagesDice[3] = Properties.Resources.dado_3;
+            imagesDice[4] = Properties.Resources.dado_4;
+            imagesDice[5] = Properties.Resources.dado_5;
+            imagesDice[6] = Properties.Resources.dado_6;
         }
 
         private void changeShift()
@@ -93,7 +93,7 @@ namespace Roll_the_dice
             }
             else if (playPlayer1 < playPlayer2)
             {
-                playPlayer2++;
+                scorePlayer2++;
             }
 
             showScore();

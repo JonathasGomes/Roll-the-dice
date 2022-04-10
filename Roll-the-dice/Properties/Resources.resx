@@ -136,6 +136,27 @@
   <data name="Alea_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alea_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dado_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dado_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dado_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_120px_Dice_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\120px-Dice-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

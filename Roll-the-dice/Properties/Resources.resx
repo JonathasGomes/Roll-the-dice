@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Alea_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alea_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alea_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alea_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alea_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alea_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alea_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="dado_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dado_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +139,34 @@
   <data name="dado_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dado_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_120px_Dice_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\120px-Dice-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="numero_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P2_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="score" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\score.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

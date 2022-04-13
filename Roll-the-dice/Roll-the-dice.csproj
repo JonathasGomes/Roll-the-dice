@@ -81,27 +81,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Alea_6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alea_5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alea_4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alea_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alea_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alea_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\120px-Dice-0.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dado_0.png" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +100,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dado_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P2_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numero_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

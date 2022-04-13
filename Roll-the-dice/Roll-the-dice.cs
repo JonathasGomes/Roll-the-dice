@@ -70,6 +70,8 @@ namespace Roll_the_dice
                 pbDice_2.Image = imagesDice[nr];
             }
         }
+
+
         //Esse método sorteia o número que vai cair no dado
         private void drawValor()
         {
@@ -143,6 +145,16 @@ namespace Roll_the_dice
             pbDice_1.Image = imagesDice[0];
             pbDice_2.Image = imagesDice[0];
             updateButton();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

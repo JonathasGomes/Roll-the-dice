@@ -20,11 +20,13 @@ namespace Roll_the_dice
             InitializeComponent();
             startImages();
             updateButton();
+            scoreNumber();
         }
 
         int scorePlayer1, scorePlayer2, playPlayer1, playPlayer2, nr, clicks;
         bool shiftPlayer1 = true, endGame;
         Image[] imagesDice = new Image[7];
+        Image[] imagesNumber = new Image[7]; 
         Random rdn = new Random();
         
         private void startImages()
@@ -36,6 +38,16 @@ namespace Roll_the_dice
             imagesDice[4] = Properties.Resources.dado_4;
             imagesDice[5] = Properties.Resources.dado_5;
             imagesDice[6] = Properties.Resources.dado_6;
+        }
+        private void scoreNumber()
+        {
+            imagesNumber[0] = Properties.Resources.numero_0;
+            imagesNumber[1] = Properties.Resources.numero_1;
+            imagesNumber[2] = Properties.Resources.numero_2;
+            imagesNumber[3] = Properties.Resources.numero_3;
+            imagesNumber[4] = Properties.Resources.numero_4;
+            imagesNumber[5] = Properties.Resources.numero_5;
+            imagesNumber[6] = Properties.Resources.numero_6;
         }
 
         private void changeShift()
@@ -92,6 +104,7 @@ namespace Roll_the_dice
             if(playPlayer1 > playPlayer2)
             {
                 scorePlayer1++;
+                pbPlayer1.Image = imagesNumber[scorePlayer1];
             }
             else if (playPlayer1 < playPlayer2)
             {
@@ -100,6 +113,7 @@ namespace Roll_the_dice
 
             showScore();
         }
+
 
         private void showScore()
         {

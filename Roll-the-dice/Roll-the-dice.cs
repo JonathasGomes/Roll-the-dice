@@ -18,9 +18,9 @@ namespace Roll_the_dice
         public Form1()
         {
             InitializeComponent();
-            startImages();
-            updateButton();
-            scoreNumber();
+            StartImages();
+            UpdateButton();
+            ScoreNumber();
         }
 
         int scorePlayer1, scorePlayer2, playPlayer1, playPlayer2, nr, clicks;
@@ -29,7 +29,7 @@ namespace Roll_the_dice
         Image[] imagesNumber = new Image[7]; 
         Random rdn = new Random();
         
-        private void startImages()
+        private void StartImages()
         {
             imagesDice[0] = Properties.Resources.dado_0;
             imagesDice[1] = Properties.Resources.dado_1;
@@ -39,7 +39,7 @@ namespace Roll_the_dice
             imagesDice[5] = Properties.Resources.dado_5;
             imagesDice[6] = Properties.Resources.dado_6;
         }
-        private void scoreNumber()
+        private void ScoreNumber()
         {
             imagesNumber[0] = Properties.Resources.numero_0;
             imagesNumber[1] = Properties.Resources.numero_1;
@@ -50,28 +50,28 @@ namespace Roll_the_dice
             imagesNumber[6] = Properties.Resources.numero_6;
         }
 
-        private void changeShift()
+        private void ChangeShift()
         {
             // "!" faz a variável turnPlayer1 ter o valor inverso
             shiftPlayer1 = !shiftPlayer1;
         }
 
-        private void updateButton()
+        private void UpdateButton()
         {
             btnPlay1.Enabled = shiftPlayer1 && !endGame;
             btnPlay2.Enabled = !shiftPlayer1 && !endGame;
             btnReset.Enabled = endGame;
 
-            colorButton();
+            ColorButton();
         }
 
-        private void colorButton()
+        private void ColorButton()
         {
             btnPlay1.BackColor = btnPlay1.Enabled ? Color.Red : Color.White;
             btnPlay2.BackColor = btnPlay2.Enabled ? Color.Red : Color.White;
         }
 
-        private void changeImage()
+        private void ChangeImage()
         {
             if (shiftPlayer1)
             {
@@ -85,16 +85,16 @@ namespace Roll_the_dice
 
 
         //Esse método sorteia o número que vai cair no dado
-        private void drawValor()
+        private void DrawValor()
         {
             //Esse código limita os números, o número maior que pode cair é 6, e o ++ faz que nunca caia no 0
             nr = (int)Math.Truncate((rdn.NextDouble() * 10) % 6);
             nr++;
-            changeImage();
-            endRound();
+            ChangeImage();
+            EndRound();
         }
 
-        private void showWinner()
+        private void ShowWinner()
         {
             endGame = true;
 
@@ -104,25 +104,32 @@ namespace Roll_the_dice
             if(playPlayer1 > playPlayer2)
             {
                 scorePlayer1++;
-                pbPlayer1.Image = imagesNumber[scorePlayer1];
+                pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
+                pictureBox1.Image = Properties.Resources.P1_;
             }
             else if (playPlayer1 < playPlayer2)
             {
                 scorePlayer2++;
+                pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
+                pictureBox1.Image = Properties.Resources.P2_;
             }
 
-            showScore();
+            ShowScore();
         }
 
+        private void pbScoreNumber2_Click(object sender, EventArgs e)
+        {
 
-        private void showScore()
+        }
+
+        private void ShowScore()
         {
             lblScoreP1.Text = "Score:  " + scorePlayer1.ToString();
             lblScoreP2.Text = "Score:  " + scorePlayer2.ToString();
 
         }
 
-        private void endRound()
+        private void EndRound()
         {
             if (shiftPlayer1)
             {
@@ -135,20 +142,20 @@ namespace Roll_the_dice
 
             if(clicks == 2)
             {
-                showWinner();
+                ShowWinner();
             }
             else
             {
-                changeShift();
+                ChangeShift();
             }
 
-            updateButton();
+            UpdateButton();
         }
 
         private void Clicks(object sender, EventArgs e)
         {
             clicks++;
-            drawValor();
+            DrawValor();
         }
 
         private void Reset(object sender, EventArgs e)
@@ -158,7 +165,7 @@ namespace Roll_the_dice
             lblWinner.Text = "Vencedor: ";
             pbDice_1.Image = imagesDice[0];
             pbDice_2.Image = imagesDice[0];
-            updateButton();
+            UpdateButton();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)

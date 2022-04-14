@@ -44,6 +44,9 @@ namespace Roll_the_dice
             this.pbPlayer1 = new System.Windows.Forms.PictureBox();
             this.pbScoreP1 = new System.Windows.Forms.PictureBox();
             this.pbScoreP2 = new System.Windows.Forms.PictureBox();
+            this.pbScoreNumberP1 = new System.Windows.Forms.PictureBox();
+            this.pbScoreNumberP2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -52,6 +55,9 @@ namespace Roll_the_dice
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreP1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pbDice_1
@@ -81,7 +87,7 @@ namespace Roll_the_dice
             this.lblScoreP1.AutoSize = true;
             this.lblScoreP1.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScoreP1.Location = new System.Drawing.Point(191, 78);
+            this.lblScoreP1.Location = new System.Drawing.Point(211, 79);
             this.lblScoreP1.Name = "lblScoreP1";
             this.lblScoreP1.Size = new System.Drawing.Size(82, 29);
             this.lblScoreP1.TabIndex = 2;
@@ -92,7 +98,7 @@ namespace Roll_the_dice
             this.lblScoreP2.AutoSize = true;
             this.lblScoreP2.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScoreP2.Location = new System.Drawing.Point(191, 107);
+            this.lblScoreP2.Location = new System.Drawing.Point(211, 108);
             this.lblScoreP2.Name = "lblScoreP2";
             this.lblScoreP2.Size = new System.Drawing.Size(82, 29);
             this.lblScoreP2.TabIndex = 3;
@@ -202,12 +208,46 @@ namespace Roll_the_dice
             // 
             this.pbScoreP2.BackColor = System.Drawing.Color.Transparent;
             this.pbScoreP2.Image = global::Roll_the_dice.Properties.Resources.score;
-            this.pbScoreP2.Location = new System.Drawing.Point(350, 78);
+            this.pbScoreP2.Location = new System.Drawing.Point(337, 78);
             this.pbScoreP2.Name = "pbScoreP2";
             this.pbScoreP2.Size = new System.Drawing.Size(116, 30);
             this.pbScoreP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbScoreP2.TabIndex = 15;
             this.pbScoreP2.TabStop = false;
+            // 
+            // pbScoreNumberP1
+            // 
+            this.pbScoreNumberP1.BackColor = System.Drawing.Color.Transparent;
+            this.pbScoreNumberP1.Image = global::Roll_the_dice.Properties.Resources.numero_0;
+            this.pbScoreNumberP1.Location = new System.Drawing.Point(152, 79);
+            this.pbScoreNumberP1.Name = "pbScoreNumberP1";
+            this.pbScoreNumberP1.Size = new System.Drawing.Size(20, 28);
+            this.pbScoreNumberP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbScoreNumberP1.TabIndex = 16;
+            this.pbScoreNumberP1.TabStop = false;
+            // 
+            // pbScoreNumberP2
+            // 
+            this.pbScoreNumberP2.BackColor = System.Drawing.Color.Transparent;
+            this.pbScoreNumberP2.Image = global::Roll_the_dice.Properties.Resources.numero_0;
+            this.pbScoreNumberP2.Location = new System.Drawing.Point(458, 79);
+            this.pbScoreNumberP2.Name = "pbScoreNumberP2";
+            this.pbScoreNumberP2.Size = new System.Drawing.Size(20, 28);
+            this.pbScoreNumberP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbScoreNumberP2.TabIndex = 17;
+            this.pbScoreNumberP2.TabStop = false;
+            this.pbScoreNumberP2.Click += new System.EventHandler(this.pbScoreNumber2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Roll_the_dice.Properties.Resources.score;
+            this.pictureBox1.Location = new System.Drawing.Point(196, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -216,6 +256,9 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(523, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbScoreNumberP2);
+            this.Controls.Add(this.pbScoreNumberP1);
             this.Controls.Add(this.pbScoreP2);
             this.Controls.Add(this.pbScoreP1);
             this.Controls.Add(this.pbPlayer1);
@@ -242,6 +285,9 @@ namespace Roll_the_dice
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreP1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +309,9 @@ namespace Roll_the_dice
         private System.Windows.Forms.PictureBox pbPlayer1;
         private System.Windows.Forms.PictureBox pbScoreP1;
         private System.Windows.Forms.PictureBox pbScoreP2;
+        private System.Windows.Forms.PictureBox pbScoreNumberP1;
+        private System.Windows.Forms.PictureBox pbScoreNumberP2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -58,7 +58,7 @@ namespace Roll_the_dice
 
         private void UpdateButton()
         {
-            btnReset.Enabled = endGame;
+            pbReset.Enabled = endGame;
 
             btnRoll1.Enabled = shiftPlayer1 && !endGame;
             btnRoll2.Enabled = !shiftPlayer1 && !endGame;
@@ -69,6 +69,8 @@ namespace Roll_the_dice
         {
             btnRoll1.Image = btnRoll1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
             btnRoll2.Image = btnRoll2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+
+            pbReset.Image = pbReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
         }
 
         private void ChangeImage()

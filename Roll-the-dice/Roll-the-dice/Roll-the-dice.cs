@@ -62,6 +62,9 @@ namespace Roll_the_dice
 
             btnRoll1.Enabled = shiftPlayer1 && !endGame;
             btnRoll2.Enabled = !shiftPlayer1 && !endGame;
+
+            button1.Enabled = shiftPlayer1 && !endGame;
+            button2.Enabled = !shiftPlayer1 && !endGame;
             ColorButton();
         }
 
@@ -71,6 +74,10 @@ namespace Roll_the_dice
             btnRoll2.Image = btnRoll2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
 
             pbReset.Image = pbReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
+
+            button1.BackgroundImage = button1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+            button2.BackgroundImage = button2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+
         }
 
         private void ChangeImage()
@@ -124,8 +131,45 @@ namespace Roll_the_dice
 
         }
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        private void button1_KeyDown(object sender, KeyEventArgs e)
         {
+            
+
+        }
+
+        private void button2_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button2_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (button1.Enabled == true)
+            {
+                    if (e.KeyCode == Keys.W)
+                    {
+                        button1.PerformClick();
+
+                    }
+            }
+
+            if (button2.Enabled == true)
+            {
+                if (e.KeyCode == Keys.E)
+                {
+                    button2.PerformClick();
+                }
+            }
 
         }
 
@@ -134,20 +178,9 @@ namespace Roll_the_dice
 
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyCode == Keys.W)
-            {
-                button1.PerformClick();
-            }
-        }
 
-        private void button1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.W)
-            {
-                button1.PerformClick();
-            }
         }
 
         private void ShowScore()

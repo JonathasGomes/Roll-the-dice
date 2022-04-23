@@ -46,6 +46,7 @@ namespace Roll_the_dice
             this.btnRoll2 = new System.Windows.Forms.PictureBox();
             this.pbReset = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -242,14 +243,35 @@ namespace Roll_the_dice
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(32, 68);
+            this.button1.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(22, 73);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(96, 32);
             this.button1.TabIndex = 22;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Clicks);
             this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
+            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(402, 73);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 32);
+            this.button2.TabIndex = 23;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Clicks);
+            this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button2_KeyDown);
+            this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
             // Form1
             // 
@@ -258,6 +280,7 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(523, 451);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbReset);
             this.Controls.Add(this.btnRoll2);
@@ -275,6 +298,7 @@ namespace Roll_the_dice
             this.Controls.Add(this.pbDice_2);
             this.Controls.Add(this.pbDice_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -319,6 +343,7 @@ namespace Roll_the_dice
         private System.Windows.Forms.PictureBox btnRoll2;
         private System.Windows.Forms.PictureBox pbReset;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

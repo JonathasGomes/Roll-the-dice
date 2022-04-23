@@ -45,6 +45,7 @@ namespace Roll_the_dice
             this.btnRoll1 = new System.Windows.Forms.PictureBox();
             this.btnRoll2 = new System.Windows.Forms.PictureBox();
             this.pbReset = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -65,7 +66,7 @@ namespace Roll_the_dice
             // 
             this.pbDice_1.BackColor = System.Drawing.Color.Transparent;
             this.pbDice_1.Image = global::Roll_the_dice.Properties.Resources.dado_0;
-            this.pbDice_1.Location = new System.Drawing.Point(58, 192);
+            this.pbDice_1.Location = new System.Drawing.Point(90, 250);
             this.pbDice_1.Name = "pbDice_1";
             this.pbDice_1.Size = new System.Drawing.Size(44, 43);
             this.pbDice_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -76,7 +77,7 @@ namespace Roll_the_dice
             // 
             this.pbDice_2.BackColor = System.Drawing.Color.Transparent;
             this.pbDice_2.Image = global::Roll_the_dice.Properties.Resources.dado_0;
-            this.pbDice_2.Location = new System.Drawing.Point(389, 192);
+            this.pbDice_2.Location = new System.Drawing.Point(390, 250);
             this.pbDice_2.Name = "pbDice_2";
             this.pbDice_2.Size = new System.Drawing.Size(44, 43);
             this.pbDice_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -124,7 +125,7 @@ namespace Roll_the_dice
             // 
             this.pbPlayer2.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayer2.Image = global::Roll_the_dice.Properties.Resources.P2_;
-            this.pbPlayer2.Location = new System.Drawing.Point(389, 133);
+            this.pbPlayer2.Location = new System.Drawing.Point(390, 182);
             this.pbPlayer2.Name = "pbPlayer2";
             this.pbPlayer2.Size = new System.Drawing.Size(52, 29);
             this.pbPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -135,7 +136,7 @@ namespace Roll_the_dice
             // 
             this.pbPlayer1.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayer1.Image = global::Roll_the_dice.Properties.Resources.P1_;
-            this.pbPlayer1.Location = new System.Drawing.Point(58, 133);
+            this.pbPlayer1.Location = new System.Drawing.Point(90, 182);
             this.pbPlayer1.Name = "pbPlayer1";
             this.pbPlayer1.Size = new System.Drawing.Size(40, 29);
             this.pbPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -146,7 +147,7 @@ namespace Roll_the_dice
             // 
             this.pbScoreP1.BackColor = System.Drawing.Color.Transparent;
             this.pbScoreP1.Image = global::Roll_the_dice.Properties.Resources.score;
-            this.pbScoreP1.Location = new System.Drawing.Point(30, 78);
+            this.pbScoreP1.Location = new System.Drawing.Point(32, 122);
             this.pbScoreP1.Name = "pbScoreP1";
             this.pbScoreP1.Size = new System.Drawing.Size(116, 30);
             this.pbScoreP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -157,7 +158,7 @@ namespace Roll_the_dice
             // 
             this.pbScoreP2.BackColor = System.Drawing.Color.Transparent;
             this.pbScoreP2.Image = global::Roll_the_dice.Properties.Resources.score;
-            this.pbScoreP2.Location = new System.Drawing.Point(337, 78);
+            this.pbScoreP2.Location = new System.Drawing.Point(350, 121);
             this.pbScoreP2.Name = "pbScoreP2";
             this.pbScoreP2.Size = new System.Drawing.Size(116, 30);
             this.pbScoreP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -168,7 +169,7 @@ namespace Roll_the_dice
             // 
             this.pbScoreNumberP1.BackColor = System.Drawing.Color.Transparent;
             this.pbScoreNumberP1.Image = global::Roll_the_dice.Properties.Resources.numero_0;
-            this.pbScoreNumberP1.Location = new System.Drawing.Point(152, 79);
+            this.pbScoreNumberP1.Location = new System.Drawing.Point(154, 123);
             this.pbScoreNumberP1.Name = "pbScoreNumberP1";
             this.pbScoreNumberP1.Size = new System.Drawing.Size(20, 28);
             this.pbScoreNumberP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -179,7 +180,7 @@ namespace Roll_the_dice
             // 
             this.pbScoreNumberP2.BackColor = System.Drawing.Color.Transparent;
             this.pbScoreNumberP2.Image = global::Roll_the_dice.Properties.Resources.numero_0;
-            this.pbScoreNumberP2.Location = new System.Drawing.Point(458, 79);
+            this.pbScoreNumberP2.Location = new System.Drawing.Point(471, 122);
             this.pbScoreNumberP2.Name = "pbScoreNumberP2";
             this.pbScoreNumberP2.Size = new System.Drawing.Size(20, 28);
             this.pbScoreNumberP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -203,7 +204,7 @@ namespace Roll_the_dice
             this.btnRoll1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRoll1.Image = ((System.Drawing.Image)(resources.GetObject("btnRoll1.Image")));
             this.btnRoll1.ImageLocation = "";
-            this.btnRoll1.Location = new System.Drawing.Point(39, 312);
+            this.btnRoll1.Location = new System.Drawing.Point(70, 336);
             this.btnRoll1.Name = "btnRoll1";
             this.btnRoll1.Size = new System.Drawing.Size(96, 32);
             this.btnRoll1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -217,7 +218,7 @@ namespace Roll_the_dice
             this.btnRoll2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRoll2.Image = ((System.Drawing.Image)(resources.GetObject("btnRoll2.Image")));
             this.btnRoll2.ImageLocation = "";
-            this.btnRoll2.Location = new System.Drawing.Point(357, 312);
+            this.btnRoll2.Location = new System.Drawing.Point(360, 338);
             this.btnRoll2.Name = "btnRoll2";
             this.btnRoll2.Size = new System.Drawing.Size(96, 32);
             this.btnRoll2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -231,7 +232,7 @@ namespace Roll_the_dice
             this.pbReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbReset.Image = global::Roll_the_dice.Properties.Resources.reset_branco_;
             this.pbReset.ImageLocation = "";
-            this.pbReset.Location = new System.Drawing.Point(197, 254);
+            this.pbReset.Location = new System.Drawing.Point(204, 392);
             this.pbReset.Name = "pbReset";
             this.pbReset.Size = new System.Drawing.Size(108, 32);
             this.pbReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -239,13 +240,25 @@ namespace Roll_the_dice
             this.pbReset.TabStop = false;
             this.pbReset.Click += new System.EventHandler(this.Reset);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Clicks);
+            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(523, 450);
+            this.ClientSize = new System.Drawing.Size(523, 451);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pbReset);
             this.Controls.Add(this.btnRoll2);
             this.Controls.Add(this.btnRoll1);
@@ -265,6 +278,10 @@ namespace Roll_the_dice
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -301,6 +318,7 @@ namespace Roll_the_dice
         private System.Windows.Forms.PictureBox btnRoll1;
         private System.Windows.Forms.PictureBox btnRoll2;
         private System.Windows.Forms.PictureBox pbReset;
+        private System.Windows.Forms.Button button1;
     }
 }
 

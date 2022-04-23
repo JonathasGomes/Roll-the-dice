@@ -119,9 +119,35 @@ namespace Roll_the_dice
             ShowScore();
         }
 
-        private void btnRoll1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.W)
+            {
+                button1.PerformClick();
+            }
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.W)
+            {
+                button1.PerformClick();
+            }
         }
 
         private void ShowScore()

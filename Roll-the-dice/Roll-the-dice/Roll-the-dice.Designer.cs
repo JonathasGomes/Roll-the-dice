@@ -42,12 +42,9 @@ namespace Roll_the_dice
             this.pbScoreNumberP1 = new System.Windows.Forms.PictureBox();
             this.pbScoreNumberP2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRoll1 = new System.Windows.Forms.PictureBox();
-            this.btnRoll2 = new System.Windows.Forms.PictureBox();
-            this.pbReset = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRollP1 = new System.Windows.Forms.Button();
+            this.btnRollP2 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -59,9 +56,6 @@ namespace Roll_the_dice
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRoll1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRoll2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReset)).BeginInit();
             this.SuspendLayout();
             // 
             // pbDice_1
@@ -200,96 +194,54 @@ namespace Roll_the_dice
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRoll1
+            // btnRollP1
             // 
-            this.btnRoll1.BackColor = System.Drawing.Color.Transparent;
-            this.btnRoll1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRoll1.Image = ((System.Drawing.Image)(resources.GetObject("btnRoll1.Image")));
-            this.btnRoll1.ImageLocation = "";
-            this.btnRoll1.Location = new System.Drawing.Point(70, 336);
-            this.btnRoll1.Name = "btnRoll1";
-            this.btnRoll1.Size = new System.Drawing.Size(96, 32);
-            this.btnRoll1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnRoll1.TabIndex = 19;
-            this.btnRoll1.TabStop = false;
-            this.btnRoll1.Click += new System.EventHandler(this.Clicks);
+            this.btnRollP1.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.btnRollP1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRollP1.FlatAppearance.BorderSize = 0;
+            this.btnRollP1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRollP1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRollP1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRollP1.Location = new System.Drawing.Point(64, 339);
+            this.btnRollP1.Name = "btnRollP1";
+            this.btnRollP1.Size = new System.Drawing.Size(96, 32);
+            this.btnRollP1.TabIndex = 22;
+            this.btnRollP1.UseVisualStyleBackColor = true;
+            this.btnRollP1.Click += new System.EventHandler(this.Clicks);
+            this.btnRollP1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
+            this.btnRollP1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
             // 
-            // btnRoll2
+            // btnRollP2
             // 
-            this.btnRoll2.BackColor = System.Drawing.Color.Transparent;
-            this.btnRoll2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRoll2.Image = ((System.Drawing.Image)(resources.GetObject("btnRoll2.Image")));
-            this.btnRoll2.ImageLocation = "";
-            this.btnRoll2.Location = new System.Drawing.Point(360, 338);
-            this.btnRoll2.Name = "btnRoll2";
-            this.btnRoll2.Size = new System.Drawing.Size(96, 32);
-            this.btnRoll2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnRoll2.TabIndex = 20;
-            this.btnRoll2.TabStop = false;
-            this.btnRoll2.Click += new System.EventHandler(this.Clicks);
+            this.btnRollP2.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.btnRollP2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRollP2.FlatAppearance.BorderSize = 0;
+            this.btnRollP2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRollP2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRollP2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRollP2.Location = new System.Drawing.Point(360, 339);
+            this.btnRollP2.Name = "btnRollP2";
+            this.btnRollP2.Size = new System.Drawing.Size(96, 32);
+            this.btnRollP2.TabIndex = 23;
+            this.btnRollP2.UseVisualStyleBackColor = true;
+            this.btnRollP2.Click += new System.EventHandler(this.Clicks);
+            this.btnRollP2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button2_KeyDown);
+            this.btnRollP2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
-            // pbReset
+            // btnReset
             // 
-            this.pbReset.BackColor = System.Drawing.Color.Transparent;
-            this.pbReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbReset.Image = global::Roll_the_dice.Properties.Resources.reset_branco_;
-            this.pbReset.ImageLocation = "";
-            this.pbReset.Location = new System.Drawing.Point(204, 392);
-            this.pbReset.Name = "pbReset";
-            this.pbReset.Size = new System.Drawing.Size(108, 32);
-            this.pbReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbReset.TabIndex = 21;
-            this.pbReset.TabStop = false;
-            this.pbReset.Click += new System.EventHandler(this.Reset);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(22, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 32);
-            this.button1.TabIndex = 22;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Clicks);
-            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
-            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(402, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 32);
-            this.button2.TabIndex = 23;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Clicks);
-            this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button2_KeyDown);
-            this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::Roll_the_dice.Properties.Resources.reset_branco_;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(216, 112);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 32);
-            this.button3.TabIndex = 24;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Reset);
+            this.btnReset.BackgroundImage = global::Roll_the_dice.Properties.Resources.reset_branco_;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Location = new System.Drawing.Point(205, 394);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(108, 32);
+            this.btnReset.TabIndex = 24;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.Reset);
             // 
             // Form1
             // 
@@ -298,12 +250,9 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(523, 451);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pbReset);
-            this.Controls.Add(this.btnRoll2);
-            this.Controls.Add(this.btnRoll1);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnRollP2);
+            this.Controls.Add(this.btnRollP1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbScoreNumberP2);
             this.Controls.Add(this.pbScoreNumberP1);
@@ -337,9 +286,6 @@ namespace Roll_the_dice
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScoreNumberP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRoll1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRoll2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReset)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,12 +305,9 @@ namespace Roll_the_dice
         private System.Windows.Forms.PictureBox pbScoreNumberP1;
         private System.Windows.Forms.PictureBox pbScoreNumberP2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox btnRoll1;
-        private System.Windows.Forms.PictureBox btnRoll2;
-        private System.Windows.Forms.PictureBox pbReset;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRollP1;
+        private System.Windows.Forms.Button btnRollP2;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

@@ -52,34 +52,25 @@ namespace Roll_the_dice
 
         private void ChangeShift()
         {
-            // "!" faz a variável turnPlayer1 ter o valor inverso
+            // "!" faz a variável shiftPlayer1 ter o valor inverso
             shiftPlayer1 = !shiftPlayer1;
         }
 
         private void UpdateButton()
         {
-            pbReset.Enabled = endGame;
-            button3.Enabled = endGame;
+            btnReset.Enabled = endGame;
 
-            btnRoll1.Enabled = shiftPlayer1 && !endGame;
-            btnRoll2.Enabled = !shiftPlayer1 && !endGame;
-
-            button1.Enabled = shiftPlayer1 && !endGame;
-            button2.Enabled = !shiftPlayer1 && !endGame;
+            btnRollP1.Enabled = shiftPlayer1 && !endGame;
+            btnRollP2.Enabled = !shiftPlayer1 && !endGame;
             ColorButton();
         }
 
         private void ColorButton()
         {
-            btnRoll1.Image = btnRoll1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
-            btnRoll2.Image = btnRoll2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+            btnRollP1.BackgroundImage = btnRollP1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+            btnRollP2.BackgroundImage = btnRollP2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
 
-            pbReset.Image = pbReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
-
-            button1.BackgroundImage = button1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
-            button2.BackgroundImage = button2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
-
-            button3.BackgroundImage = button3.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
+            btnReset.BackgroundImage = btnReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
 
         }
 
@@ -157,28 +148,27 @@ namespace Roll_the_dice
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (button1.Enabled == true)
+            if (btnRollP1.Enabled == true)
             {
-
                 if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
                 {
-                    button1.PerformClick();
+                    btnRollP1.PerformClick();
                 }
             }
 
-            if (button2.Enabled == true)
+            if (btnRollP2.Enabled == true)
             {
                 if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
                 {
-                    button2.PerformClick();
+                    btnRollP2.PerformClick();
                 }
             }
 
-            if(button3.Enabled == true)
+            if(btnReset.Enabled == true)
             {
-                if (e.KeyCode == Keys.P)
+                if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
                 {
-                    button3.PerformClick();
+                    btnReset.PerformClick();
                 }
             }
         }

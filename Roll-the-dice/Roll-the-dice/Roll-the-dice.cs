@@ -156,19 +156,23 @@ namespace Roll_the_dice
         {
             if (button1.Enabled == true)
             {
-                    if (e.KeyCode == Keys.W)
-                    {
-                        button1.PerformClick();
 
-                    }
+                if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
+                {
+                    button1.PerformClick();
+                }
             }
 
             if (button2.Enabled == true)
             {
-                if (e.KeyCode == Keys.E)
+                if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
                 {
                     button2.PerformClick();
                 }
+                ////if (e.KeyCode == Keys.RControlKey)
+                ////{
+                ////    button2.PerformClick();
+                ////}
             }
 
         }
@@ -181,6 +185,11 @@ namespace Roll_the_dice
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            e.IsInputKey = true;
         }
 
         private void ShowScore()

@@ -47,6 +47,7 @@ namespace Roll_the_dice
             this.pbReset = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -244,6 +245,7 @@ namespace Roll_the_dice
             // button1
             // 
             this.button1.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -260,6 +262,7 @@ namespace Roll_the_dice
             // button2
             // 
             this.button2.BackgroundImage = global::Roll_the_dice.Properties.Resources.roll_branco_;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -273,6 +276,21 @@ namespace Roll_the_dice
             this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button2_KeyDown);
             this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Roll_the_dice.Properties.Resources.reset_branco_;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(216, 112);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(108, 32);
+            this.button3.TabIndex = 24;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Reset);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +298,7 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(523, 451);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbReset);
@@ -345,6 +364,7 @@ namespace Roll_the_dice
         private System.Windows.Forms.PictureBox pbReset;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

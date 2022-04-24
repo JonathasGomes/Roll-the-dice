@@ -59,6 +59,7 @@ namespace Roll_the_dice
         private void UpdateButton()
         {
             pbReset.Enabled = endGame;
+            button3.Enabled = endGame;
 
             btnRoll1.Enabled = shiftPlayer1 && !endGame;
             btnRoll2.Enabled = !shiftPlayer1 && !endGame;
@@ -77,6 +78,8 @@ namespace Roll_the_dice
 
             button1.BackgroundImage = button1.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
             button2.BackgroundImage = button2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
+
+            button3.BackgroundImage = button3.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
 
         }
 
@@ -169,12 +172,15 @@ namespace Roll_the_dice
                 {
                     button2.PerformClick();
                 }
-                ////if (e.KeyCode == Keys.RControlKey)
-                ////{
-                ////    button2.PerformClick();
-                ////}
             }
 
+            if(button3.Enabled == true)
+            {
+                if (e.KeyCode == Keys.P)
+                {
+                    button3.PerformClick();
+                }
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)

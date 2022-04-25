@@ -133,6 +133,36 @@ namespace Roll_the_dice.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap drawn {
+            get {
+                object obj = ResourceManager.GetObject("drawn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fala_p1_ponto {
+            get {
+                object obj = ResourceManager.GetObject("fala_p1_ponto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fala_p2_ponto {
+            get {
+                object obj = ResourceManager.GetObject("fala_p2_ponto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap numero_0 {
             get {
                 object obj = ResourceManager.GetObject("numero_0", resourceCulture);
@@ -213,9 +243,29 @@ namespace Roll_the_dice.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap p1_turn {
+            get {
+                object obj = ResourceManager.GetObject("p1_turn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap P2_ {
             get {
                 object obj = ResourceManager.GetObject("P2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap p2_turn {
+            get {
+                object obj = ResourceManager.GetObject("p2_turn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

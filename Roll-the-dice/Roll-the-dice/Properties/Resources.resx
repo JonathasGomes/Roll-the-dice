@@ -139,6 +139,15 @@
   <data name="dado_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dado_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="drawn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drawn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fala_p1_ponto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fala_p1_ponto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fala_p2_ponto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fala_p2_ponto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="numero_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\numero_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,8 +172,14 @@
   <data name="P1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\P1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="p1_turn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p1_turn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="P2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\P2_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="p2_turn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p2_turn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reset_branco_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reset_branco_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

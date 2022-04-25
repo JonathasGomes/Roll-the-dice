@@ -32,7 +32,6 @@ namespace Roll_the_dice
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pbDice_1 = new System.Windows.Forms.PictureBox();
             this.pbDice_2 = new System.Windows.Forms.PictureBox();
-            this.lblWinner = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.pbScoreNumberP1 = new System.Windows.Forms.PictureBox();
@@ -71,17 +70,6 @@ namespace Roll_the_dice
             this.pbDice_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDice_2.TabIndex = 1;
             this.pbDice_2.TabStop = false;
-            // 
-            // lblWinner
-            // 
-            this.lblWinner.AutoSize = true;
-            this.lblWinner.BackColor = System.Drawing.Color.Transparent;
-            this.lblWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWinner.Location = new System.Drawing.Point(180, 33);
-            this.lblWinner.Name = "lblWinner";
-            this.lblWinner.Size = new System.Drawing.Size(113, 33);
-            this.lblWinner.TabIndex = 8;
-            this.lblWinner.Text = "Winner";
             // 
             // btnExit
             // 
@@ -134,13 +122,14 @@ namespace Roll_the_dice
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Roll_the_dice.Properties.Resources.score;
-            this.pictureBox1.Location = new System.Drawing.Point(196, 150);
+            this.pictureBox1.Image = global::Roll_the_dice.Properties.Resources.p1_turn;
+            this.pictureBox1.Location = new System.Drawing.Point(203, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnRollP1
             // 
@@ -203,7 +192,6 @@ namespace Roll_the_dice
             this.Controls.Add(this.pbScoreNumberP1);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.pbDice_2);
             this.Controls.Add(this.pbDice_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -229,7 +217,6 @@ namespace Roll_the_dice
 
         private System.Windows.Forms.PictureBox pbDice_1;
         private System.Windows.Forms.PictureBox pbDice_2;
-        private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.PictureBox btnExit;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox pbScoreNumberP1;

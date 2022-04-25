@@ -143,5 +143,20 @@
   <ItemGroup>
     <None Include="Resources\roll_vermelho_.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_turn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_turn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fala_p1_ponto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fala_p2_ponto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

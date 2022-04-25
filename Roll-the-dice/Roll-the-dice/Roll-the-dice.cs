@@ -74,6 +74,7 @@ namespace Roll_the_dice
             btnReset.BackgroundImage = btnReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
         }
 
+        //Esse método muda a imagem do dado
         private void ChangeImage()
         {
             if (shiftPlayer1)
@@ -82,11 +83,21 @@ namespace Roll_the_dice
             }
             else
             {
-                pbDice_2.Image = imagesDice[nr];
+                pbDice_2.Image = imagesDice[nr];             
             }
         }
 
-
+        private void UpdateTurn()
+        {
+            if (shiftPlayer1 && !endGame)
+            {
+                pictureBox1.Image = Properties.Resources.p1_turn;
+            }
+            else if(!shiftPlayer1 && !endGame)
+            {
+                pictureBox1.Image = Properties.Resources.p2_turn;
+            }
+        }
         //Esse método sorteia o número que vai cair no dado
         private void DrawValor()
         {
@@ -101,16 +112,13 @@ namespace Roll_the_dice
         {
             endGame = true;
 
-            lblWinner.Text += " " + string.Format(playPlayer1 > playPlayer2 ? "Player 1" :
-                (playPlayer1 < playPlayer2 ? "Player 2" : "Empate!"));
-
             if(playPlayer1 > playPlayer2)
             {
                 if(pbScoreNumberP1.Image != imagesNumber[6])
                 {
                     scorePlayer1++;
                     pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
-                    pictureBox1.Image = Properties.Resources.P1_;
+                    pictureBox1.Image = Properties.Resources.fala_p1_ponto;
                 }
                 else
                 {
@@ -123,14 +131,18 @@ namespace Roll_the_dice
                 {
                     scorePlayer2++;
                     pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
-                    pictureBox1.Image = Properties.Resources.P2_;
+                    pictureBox1.Image = Properties.Resources.fala_p2_ponto;
                 }
                 else
                 {
 
                 }
             }
-
+            else
+            {
+                pictureBox1.Image = Properties.Resources.drawn;
+            }
+            
             ShowScore();
         }
 
@@ -160,6 +172,11 @@ namespace Roll_the_dice
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void EndRound()
         {
             if (shiftPlayer1)
@@ -174,12 +191,13 @@ namespace Roll_the_dice
             if(clicks == 2)
             {
                 ShowWinner();
+                
             }
             else
             {
                 ChangeShift();
             }
-
+            UpdateTurn();
             UpdateButton();
         }
 
@@ -193,10 +211,10 @@ namespace Roll_the_dice
         {
             endGame = false;
             playPlayer1 = playPlayer2 = clicks = 0;
-            lblWinner.Text = "Vencedor: ";
             pbDice_1.Image = imagesDice[0];
             pbDice_2.Image = imagesDice[0];
             UpdateButton();
+            UpdateTurn();
         }
 
         private void Hotkeys()

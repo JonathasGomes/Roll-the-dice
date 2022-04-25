@@ -106,6 +106,7 @@ namespace Roll_the_dice
             nr++;
             ChangeImage();
             EndRound();
+   
         }
 
         private void ShowWinner()
@@ -114,7 +115,7 @@ namespace Roll_the_dice
 
             if(playPlayer1 > playPlayer2)
             {
-                if(pbScoreNumberP1.Image != imagesNumber[6])
+                if(pbScoreNumberP1.Image != imagesNumber[3])
                 {
                     scorePlayer1++;
                     pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
@@ -122,12 +123,14 @@ namespace Roll_the_dice
                 }
                 else
                 {
-
+                    scorePlayer1++;
+                    pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
+                    pictureBox1.Image = Properties.Resources.p1_win;
                 }
             }
             else if (playPlayer1 < playPlayer2)
             {
-                if(pbScoreNumberP2.Image != imagesNumber[6])
+                if(pbScoreNumberP2.Image != imagesNumber[3])
                 {
                     scorePlayer2++;
                     pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
@@ -135,7 +138,9 @@ namespace Roll_the_dice
                 }
                 else
                 {
-
+                    scorePlayer2++;
+                    pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
+                    pictureBox1.Image = Properties.Resources.p2_win;
                 }
             }
             else
@@ -244,6 +249,12 @@ namespace Roll_the_dice
                 }
             }
         }
+
+        private void Newgame()
+        {
+
+        }
+
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

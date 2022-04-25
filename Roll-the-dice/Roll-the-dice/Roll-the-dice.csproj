@@ -158,5 +158,11 @@
   <ItemGroup>
     <None Include="Resources\fala_p2_ponto.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_win.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

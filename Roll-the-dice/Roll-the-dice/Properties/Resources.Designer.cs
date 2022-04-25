@@ -253,6 +253,16 @@ namespace Roll_the_dice.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap p1_win {
+            get {
+                object obj = ResourceManager.GetObject("p1_win", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap P2_ {
             get {
                 object obj = ResourceManager.GetObject("P2_", resourceCulture);
@@ -266,6 +276,16 @@ namespace Roll_the_dice.Properties {
         internal static System.Drawing.Bitmap p2_turn {
             get {
                 object obj = ResourceManager.GetObject("p2_turn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap p2_win {
+            get {
+                object obj = ResourceManager.GetObject("p2_win", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

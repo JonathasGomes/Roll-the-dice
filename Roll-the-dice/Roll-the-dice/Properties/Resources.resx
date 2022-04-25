@@ -175,11 +175,17 @@
   <data name="p1_turn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p1_turn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="p1_win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p1_win.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="P2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\P2_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="p2_turn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p2_turn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="p2_win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p2_win.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reset_branco_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reset_branco_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

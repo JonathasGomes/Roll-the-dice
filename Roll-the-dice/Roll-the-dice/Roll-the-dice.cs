@@ -53,6 +53,7 @@ namespace Roll_the_dice
         private void ChangeShift()
         {
             // "!" faz a variável shiftPlayer1 ter o valor inverso
+            //A variavél shiftPlayer armazena o turno do jogador
             shiftPlayer1 = !shiftPlayer1;
         }
 
@@ -71,7 +72,6 @@ namespace Roll_the_dice
             btnRollP2.BackgroundImage = btnRollP2.Enabled ? Properties.Resources.roll_vermelho_ : Properties.Resources.roll_branco_;
 
             btnReset.BackgroundImage = btnReset.Enabled ? Properties.Resources.reset_vermelho_ : Properties.Resources.reset_branco_;
-
         }
 
         private void ChangeImage()
@@ -106,37 +106,35 @@ namespace Roll_the_dice
 
             if(playPlayer1 > playPlayer2)
             {
-                scorePlayer1++;
-                pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
-                pictureBox1.Image = Properties.Resources.P1_;
+                if(pbScoreNumberP1.Image != imagesNumber[6])
+                {
+                    scorePlayer1++;
+                    pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
+                    pictureBox1.Image = Properties.Resources.P1_;
+                }
+                else
+                {
+
+                }
             }
             else if (playPlayer1 < playPlayer2)
             {
-                scorePlayer2++;
-                pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
-                pictureBox1.Image = Properties.Resources.P2_;
+                if(pbScoreNumberP2.Image != imagesNumber[6])
+                {
+                    scorePlayer2++;
+                    pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
+                    pictureBox1.Image = Properties.Resources.P2_;
+                }
+                else
+                {
+
+                }
             }
 
             ShowScore();
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-
-        }
-
-        private void button2_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void button1_KeyUp(object sender, KeyEventArgs e)
         {
 
         }
@@ -148,50 +146,17 @@ namespace Roll_the_dice
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (btnRollP1.Enabled == true)
-            {
-                if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
-                {
-                    btnRollP1.PerformClick();
-                }
-            }
-
-            if (btnRollP2.Enabled == true)
-            {
-                if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
-                {
-                    btnRollP2.PerformClick();
-                }
-            }
-
-            if(btnReset.Enabled == true)
-            {
-                if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
-                {
-                    btnReset.PerformClick();
-                }
-            }
-        }
-
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            e.IsInputKey = true;
+            Hotkeys();
         }
 
         private void ShowScore()
         {
             //lblScoreP1.Text = "Score:  " + scorePlayer1.ToString();
             //lblScoreP2.Text = "Score:  " + scorePlayer2.ToString();
+        }
+
+        private void pbScoreP1_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -234,6 +199,33 @@ namespace Roll_the_dice
             UpdateButton();
         }
 
+        private void Hotkeys()
+        {
+            //Teclas de atalhos P1, P2 e Reset
+            if (btnRollP1.Enabled == true)
+            {
+                if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
+                {
+                    btnRollP1.PerformClick();
+                }
+            }
+
+            if (btnRollP2.Enabled == true)
+            {
+                if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
+                {
+                    btnRollP2.PerformClick();
+                }
+            }
+
+            if (btnReset.Enabled == true)
+            {
+                if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
+                {
+                    btnReset.PerformClick();
+                }
+            }
+        }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

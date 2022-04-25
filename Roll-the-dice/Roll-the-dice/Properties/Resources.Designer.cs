@@ -63,6 +63,16 @@ namespace Roll_the_dice.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botao_ok {
+            get {
+                object obj = ResourceManager.GetObject("botao_ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dado_0 {
             get {
                 object obj = ResourceManager.GetObject("dado_0", resourceCulture);

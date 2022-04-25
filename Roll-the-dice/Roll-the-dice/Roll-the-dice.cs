@@ -59,7 +59,14 @@ namespace Roll_the_dice
 
         private void UpdateButton()
         {
-            btnReset.Enabled = endGame;
+            if(pbScoreNumberP1.Image == imagesNumber[4] || pbScoreNumberP2.Image == imagesNumber[4])
+            {
+                btnReset.Enabled = false;
+            }
+            else
+            {
+                btnReset.Enabled = endGame;
+            }
 
             btnRollP1.Enabled = shiftPlayer1 && !endGame;
             btnRollP2.Enabled = !shiftPlayer1 && !endGame;
@@ -123,6 +130,8 @@ namespace Roll_the_dice
                 }
                 else
                 {
+                    btnOK.Visible = true;
+                    //btnReset.Visible = false;
                     scorePlayer1++;
                     pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
                     pictureBox1.Image = Properties.Resources.p1_win;
@@ -138,9 +147,12 @@ namespace Roll_the_dice
                 }
                 else
                 {
+                    btnOK.Visible = true;
+                    //btnReset.Visible = false;
                     scorePlayer2++;
                     pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
                     pictureBox1.Image = Properties.Resources.p2_win;
+ 
                 }
             }
             else
@@ -148,38 +160,11 @@ namespace Roll_the_dice
                 pictureBox1.Image = Properties.Resources.drawn;
             }
             
-            ShowScore();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_KeyUp(object sender, KeyEventArgs e)
-        {
-
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             Hotkeys();
-        }
-
-        private void ShowScore()
-        {
-            //lblScoreP1.Text = "Score:  " + scorePlayer1.ToString();
-            //lblScoreP2.Text = "Score:  " + scorePlayer2.ToString();
-        }
-
-        private void pbScoreP1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void EndRound()
@@ -195,8 +180,7 @@ namespace Roll_the_dice
 
             if(clicks == 2)
             {
-                ShowWinner();
-                
+                ShowWinner();                
             }
             else
             {
@@ -204,6 +188,16 @@ namespace Roll_the_dice
             }
             UpdateTurn();
             UpdateButton();
+        }
+
+        private void Newgame(object sender, EventArgs e)
+        {
+            Reset(sender, e);
+            scorePlayer1 = 0;
+            scorePlayer2 = 0;
+            pbScoreNumberP1.Image = imagesNumber[0];
+            pbScoreNumberP2.Image = imagesNumber[0];
+            btnOK.Visible = false;
         }
 
         private void Clicks(object sender, EventArgs e)
@@ -249,12 +243,6 @@ namespace Roll_the_dice
                 }
             }
         }
-
-        private void Newgame()
-        {
-
-        }
-
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

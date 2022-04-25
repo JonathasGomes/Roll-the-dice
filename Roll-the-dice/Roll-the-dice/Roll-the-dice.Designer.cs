@@ -40,6 +40,7 @@ namespace Roll_the_dice
             this.btnRollP1 = new System.Windows.Forms.Button();
             this.btnRollP2 = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -129,7 +130,6 @@ namespace Roll_the_dice
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnRollP1
             // 
@@ -160,7 +160,6 @@ namespace Roll_the_dice
             this.btnRollP2.TabIndex = 23;
             this.btnRollP2.UseVisualStyleBackColor = true;
             this.btnRollP2.Click += new System.EventHandler(this.Clicks);
-            this.btnRollP2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
             // btnReset
             // 
@@ -177,6 +176,23 @@ namespace Roll_the_dice
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.Reset);
             // 
+            // btnOK
+            // 
+            this.btnOK.BackgroundImage = global::Roll_the_dice.Properties.Resources.botao_ok;
+            this.btnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOK.FlatAppearance.BorderSize = 0;
+            this.btnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Location = new System.Drawing.Point(330, 68);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(37, 23);
+            this.btnOK.TabIndex = 25;
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Visible = false;
+            this.btnOK.Click += new System.EventHandler(this.Newgame);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +200,7 @@ namespace Roll_the_dice
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(523, 451);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnRollP2);
             this.Controls.Add(this.btnRollP1);
@@ -199,7 +216,6 @@ namespace Roll_the_dice
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDice_2)).EndInit();
@@ -225,6 +241,7 @@ namespace Roll_the_dice
         private System.Windows.Forms.Button btnRollP1;
         private System.Windows.Forms.Button btnRollP2;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnOK;
     }
 }
 

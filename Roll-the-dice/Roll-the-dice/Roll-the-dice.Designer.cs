@@ -169,7 +169,7 @@ namespace Roll_the_dice
             this.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Location = new System.Drawing.Point(205, 394);
+            this.btnReset.Location = new System.Drawing.Point(206, 394);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(108, 32);
             this.btnReset.TabIndex = 24;
@@ -178,6 +178,7 @@ namespace Roll_the_dice
             // 
             // btnOK
             // 
+            this.btnOK.BackColor = System.Drawing.Color.Transparent;
             this.btnOK.BackgroundImage = global::Roll_the_dice.Properties.Resources.botao_ok;
             this.btnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -185,11 +186,11 @@ namespace Roll_the_dice
             this.btnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Location = new System.Drawing.Point(330, 68);
+            this.btnOK.Location = new System.Drawing.Point(333, 69);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(37, 23);
             this.btnOK.TabIndex = 25;
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Visible = false;
             this.btnOK.Click += new System.EventHandler(this.Newgame);
             // 

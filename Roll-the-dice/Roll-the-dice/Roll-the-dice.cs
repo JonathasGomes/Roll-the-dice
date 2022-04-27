@@ -59,7 +59,7 @@ namespace Roll_the_dice
 
         private void UpdateButton()
         {
-            if(pbScoreNumberP1.Image == imagesNumber[4] || pbScoreNumberP2.Image == imagesNumber[4])
+            if(pbScoreNumberP1.Image == imagesNumber[6] || pbScoreNumberP2.Image == imagesNumber[6])
             {
                 btnReset.Enabled = false;
             }
@@ -122,7 +122,7 @@ namespace Roll_the_dice
 
             if(playPlayer1 > playPlayer2)
             {
-                if(pbScoreNumberP1.Image != imagesNumber[3])
+                if(pbScoreNumberP1.Image != imagesNumber[5])
                 {
                     scorePlayer1++;
                     pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
@@ -131,7 +131,6 @@ namespace Roll_the_dice
                 else
                 {
                     btnOK.Visible = true;
-                    //btnReset.Visible = false;
                     scorePlayer1++;
                     pbScoreNumberP1.Image = imagesNumber[scorePlayer1];
                     pictureBox1.Image = Properties.Resources.p1_win;
@@ -139,7 +138,7 @@ namespace Roll_the_dice
             }
             else if (playPlayer1 < playPlayer2)
             {
-                if(pbScoreNumberP2.Image != imagesNumber[3])
+                if(pbScoreNumberP2.Image != imagesNumber[5])
                 {
                     scorePlayer2++;
                     pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
@@ -148,7 +147,6 @@ namespace Roll_the_dice
                 else
                 {
                     btnOK.Visible = true;
-                    //btnReset.Visible = false;
                     scorePlayer2++;
                     pbScoreNumberP2.Image = imagesNumber[scorePlayer2];
                     pictureBox1.Image = Properties.Resources.p2_win;

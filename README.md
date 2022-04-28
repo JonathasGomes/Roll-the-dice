@@ -30,14 +30,16 @@ Player 1 and Player 2 roll the dice and whoever ends with the highest number win
 ## 🕹 How to Play
 Primeiro veja se está no seu turno olhando para a fala do Dadinho<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969229179285549106/p1_turn.png"><br><br>
-Se você é o player 1, então é sua vez de jogar o dado e o botão Roll vai estar disponivel<br><br>
+Se for sua vez de jogar o dado o botão Roll vai estar disponivel<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
-Clique no botão roll com o mouse ou aperte a tecla ALT do teclado para jogar o dado<br>
+Clique no botão roll com o mouse para jogar o dado<br>
+Você também pode jogar o dado apertando a tecla ALT se você for o Player 1 ou se for o player 2 a tecla CTRL<br>
 Depois de ter jogado o dado vai aparecer o número dele e o botão ROLL ira ficar desabilitado<br><br>
-<img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br> <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
-Agora é a vez do player 2 jogar o dado<br><br>
-<img src="https://media.discordapp.net/attachments/956982508292046949/969234945962831922/unknown.png"><br><br>
-Clique no botão roll com o mouse ou aperte a tecla SHIFT do teclado para jogar o dado<br><br>
-<img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
-
+<img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
+Depois dos dois Players terem jogado os dados o Dadinho vai falar quem ganhou o round<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969240443558723669/unknown.png"><br><br>
+O botão reset vai ficar disponivel<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969241222243823657/unknown.png"><br><br>
+Para começar um novo round aperte no botão Reset com o mouse ou use a tecla SHIFT
 ## 🕹 Gameplay

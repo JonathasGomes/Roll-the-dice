@@ -28,5 +28,16 @@ If you are only interested in playing, download the game here<br>
 ## 📜 About the Game
 Player 1 and Player 2 roll the dice and whoever ends with the highest number win +1 point in the score, whoever reaches 6 points first winners.<br>
 ## 🕹 How to Play
+Primeiro veja se está no seu turno olhando para a fala do Dadinho<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969229179285549106/p1_turn.png"><br><br>
+Se você é o player 1, então é sua vez de jogar o dado e o botão Roll vai estar disponivel<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
+Clique no botão roll com o mouse ou aperte a tecla ALT do teclado para jogar o dado<br>
+Depois de ter jogado o dado vai aparecer o número dele e o botão ROLL ira ficar desabilitado<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br> <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
+Agora é a vez do player 2 jogar o dado<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969234945962831922/unknown.png"><br><br>
+Clique no botão roll com o mouse ou aperte a tecla SHIFT do teclado para jogar o dado<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
 
 ## 🕹 Gameplay

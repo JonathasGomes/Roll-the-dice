@@ -37,9 +37,12 @@ Você também pode jogar o dado apertando a tecla ALT se você for o Player 1 ou
 Depois de ter jogado o dado vai aparecer o número dele e o botão ROLL ira ficar desabilitado<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
-Depois dos dois Players terem jogado os dados o Dadinho vai falar quem ganhou o round<br><br>
+Depois dos dois Players terem jogado os dados o Dadinho vai falar quem ganhou o round e o botão reset vai ficar disponivel<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969240443558723669/unknown.png"><br><br>
-O botão reset vai ficar disponivel<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969241222243823657/unknown.png"><br><br>
-Para começar um novo round aperte no botão Reset com o mouse ou use a tecla SHIFT
+Para começar um novo round aperte no botão Reset com o mouse ou use a tecla SHIFT<br><br>
+Quem chegar a 6 pontos primeiro vence<br><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/969243374152474624/unknown.png"><br><br>
+Aperte o botão OK para começar uma nova partida<br><br>
+<img align="center" src="https://media.discordapp.net/attachments/956982508292046949/968143866580574278/botao_ok.png"/>
 ## 🕹 Gameplay

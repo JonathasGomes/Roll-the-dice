@@ -26,5 +26,7 @@ If you are only interested in playing, download the game here<br>
 [![Download Jokenpo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download Jokenpo")](https://docs.google.com/uc?export=download&id=16NJEHRY50fN68o9y-qn982WE1daRBNUf)
 <!-- END LATEST DOWNLOAD BUTTON -->
 ## 📜 About the Game
-
+Player 1 and Player 2 roll the dice and whoever ends with the highest number win +1 point in the score, whoever reaches 6 points first winners.<br>
 ## 🕹 How to Play
+
+## 🕹 Gameplay

@@ -8,7 +8,7 @@ This project was made using
 * **Windows Forms .NET Framework 4.7.2**
 * **Aseprite** 
 
-<br> All pixel arts were created by Rafael. <img align="center" src="https://media.discordapp.net/attachments/956982508292046949/968143866580574278/botao_ok.png"/>
+<br> All pixel arts were created by Rafael. <img align="center" src="https://media.discordapp.net/attachments/956982508292046949/968143866580574278/botao_ok.png">
 ## ⚙️ Pre-requisites
 * Computer/Notebook with **Windows** as Operating System<br>
 * Installed **Microsoft Visual Studio**<br>
@@ -28,7 +28,8 @@ If you are only interested in playing, download the game here<br>
 ## 📜 About the Game
 Player 1 and Player 2 roll the dice and whoever ends with the highest number win +1 point in the score, whoever reaches 6 points first winners.<br>
 ## 🕹 How to Play
-Primeiro veja se está no seu turno olhando para a fala do Dadinho<br><br>
+Primeiro veja se está no seu turno olhando para a fala do Dadinho
+<img align="center" src="https://media.discordapp.net/attachments/429694232606015488/969389963286294618/dado_personagem.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969229179285549106/p1_turn.png"><br><br>
 Se for sua vez de jogar o dado o botão Roll vai estar disponivel<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>

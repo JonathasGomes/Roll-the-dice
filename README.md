@@ -33,9 +33,10 @@ First see if you're on your shift looking at Dadinho's <img align="center" src="
 <img src="https://media.discordapp.net/attachments/956982508292046949/969229179285549106/p1_turn.png"><br><br>
 If it's your turn to roll the dice, the Roll button will be available<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
-Click on the roll button with the mouse to roll the dice
+Click on the roll button with the mouse to roll the dice<br>
 You can also roll the dice by pressing the ALT key if you are Player 1 or if you are Player 2 the CTRL key<br>
-Depois de ter jogado o dado vai aparecer o número dele e o botão ROLL ira ficar desabilitado<br><br>
+After you have rolled the dice, its number will appear and the ROLL button will be disabled
+<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
 Depois dos dois Players terem jogado os dados o Dadinho vai falar quem ganhou o round e o botão reset vai ficar disponivel<br><br>

@@ -33,8 +33,8 @@ First see if you're on your shift looking at Dadinho's <img align="center" src="
 <img src="https://media.discordapp.net/attachments/956982508292046949/969229179285549106/p1_turn.png"><br><br>
 If it's your turn to roll the dice, the Roll button will be available<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
-Clique no botão roll com o mouse para jogar o dado<br>
-Você também pode jogar o dado apertando a tecla ALT se você for o Player 1 ou se for o player 2 a tecla CTRL<br>
+Click on the roll button with the mouse to roll the dice
+You can also roll the dice by pressing the ALT key if you are Player 1 or if you are Player 2 the CTRL key<br>
 Depois de ter jogado o dado vai aparecer o número dele e o botão ROLL ira ficar desabilitado<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>

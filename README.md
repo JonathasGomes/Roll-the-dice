@@ -43,9 +43,9 @@ After the Players have played the dice, Dadinho will say who won the round and t
 <br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969240443558723669/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969241222243823657/unknown.png"><br><br>
-Para começar um novo round aperte no botão Reset com o mouse ou use a tecla SHIFT<br><br>
-Quem chegar a 6 pontos primeiro vence<br><br>
+To start a new round, press the Reset button with the mouse or use the SHIFT key<br><br>
+Whoever reaches 6 points first wins<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969243374152474624/unknown.png"><br><br>
-Aperte o botão OK para começar uma nova partida<br><br>
+Press the OK button to start a new game<br><br>
 <img align="center" src="https://media.discordapp.net/attachments/956982508292046949/968143866580574278/botao_ok.png"/>
 ## 🕹 Gameplay

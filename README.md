@@ -39,7 +39,8 @@ After you have rolled the dice, its number will appear and the ROLL button will 
 <br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233425506635807/unknown.png"><br><br>
-Depois dos dois Players terem jogado os dados o Dadinho vai falar quem ganhou o round e o botão reset vai ficar disponivel<br><br>
+After the Players have played the dice, Dadinho will say who won the round and the reset button will be available
+<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969240443558723669/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969241222243823657/unknown.png"><br><br>
 Para começar um novo round aperte no botão Reset com o mouse ou use a tecla SHIFT<br><br>

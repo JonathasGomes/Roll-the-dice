@@ -34,7 +34,7 @@ First see if you're on your shift looking at Dadinho's <img align="center" src="
 If it's your turn to roll the dice, the Roll button will be available<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969230725742198804/roll_vermelho_.png"><br><br>
 Click on the roll button with the mouse to roll the dice<br>
-You can also roll the dice by pressing the ALT key if you are Player 1 or if you are Player 2 the CTRL key<br>
+You can also roll the dice by pressing the `ALT` key if you are Player 1 or if you are Player 2 the `CTRL` key<br>
 After you have rolled the dice, its number will appear and the ROLL button will be disabled
 <br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969233922426806333/unknown.png"><br><br>
@@ -43,7 +43,7 @@ After the Players have played the dice, Dadinho will say who won the round and t
 <br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969240443558723669/unknown.png"><br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969241222243823657/unknown.png"><br><br>
-To start a new round, press the Reset button with the mouse or use the SHIFT key<br><br>
+To start a new round, press the Reset button with the mouse or use the `SHIFT` key<br><br>
 Whoever reaches 6 points first wins<br><br>
 <img src="https://media.discordapp.net/attachments/956982508292046949/969243374152474624/unknown.png"><br><br>
 Press the OK button to start a new game<br><br>

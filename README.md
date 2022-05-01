@@ -49,5 +49,5 @@ Whoever reaches 6 points first wins<br><br>
 Press the OK button to start a new game<br><br>
 <img align="center" src="https://media.discordapp.net/attachments/956982508292046949/968143866580574278/botao_ok.png"/>
 
-### Hotkeys
-## 🕹 Gameplay
+### ⌨️ Hotkeys
+## 👾 Gameplay

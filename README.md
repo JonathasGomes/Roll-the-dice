@@ -51,3 +51,5 @@ Press the OK button to start a new game<br><br>
 
 ### ⌨️ Hotkeys
 ## 👾 Gameplay
+<img src="https://media.discordapp.net/attachments/956982508292046949/971064660906356766/Animacao2.gif"/><br>
+<img src="https://media.discordapp.net/attachments/956982508292046949/971068853272600626/Winner1.gif"/>
